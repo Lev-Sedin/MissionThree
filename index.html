@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MissionThree</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section class="forms">
+                <h2 class="h2-title">Form</h2>
+                <div class="forms-section">
+                    <div class="forms-inputs">
+                        <div class="form-section__item">
+                            <h3 class="h3-title form-section__name">Input Disabled</h3>
+                            <input type="text" placeholder="Placeholder" class="forms-section__input">
+                        </div>
+                        <div class="form-section__item">
+                            <h3 class="h3-title form-section__name">Input Focused</h3>
+                            <input type="text" placeholder="Value" class="forms-section__input focus-input">
+                        </div>
+                        <div class="form-section__item">
+                            <h3 class="h3-title form-section__name">Input Error</h3>
+                            <input type="text" placeholder="Value" disabled="disabled" class="forms-section__input error-input">
+                        </div>
+                    </div>
+                    <div class="forms-search">
+                        <div class="form-section__item">
+                            <h3 class="h3-title form-section__name">Search Disabled</h3>
+                            <div class="forms-section_wrapper">
+                                <input type="text" placeholder="Placeholder" class="forms-section__input">
+                                <img class="form-section__icon" src="img/svg/Vector.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="form-section__item">
+                            <h3 class="h3-title form-section__name">Search Focused</h3>
+                            <div class="forms-section_wrapper">
+                                <input type="text" placeholder="Placeholder" class="forms-section__input focus-input">
+                                <img class="form-section__icon" src="img/svg/Vector.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="form-section__item">
+                            <h3 class="h3-title form-section__name">Search Error</h3>
+                            <div class="forms-section_wrapper">
+                                <input type="text" placeholder="Placeholder" class="forms-section__input error-input">
+                                <img class="form-section__icon" src="img/svg/Vector.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forms-textarea">
+                        <div class="form-section__item">
+                            <h3 class="h3-title form-section__name">Search Error</h3>
+                            <textarea name="text" id="textarea" placeholder="Placeholder" class="forms-section__input"></textarea>
+                        </div>
+                        <div class="form-section__item">
+                            <h3 class="h3-title form-section__name">Search Error</h3>
+                            <textarea name="text" id="textarea" placeholder="Value" class="forms-section__input error-input"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="forms-section">
+                    <div class="forms-checkbox">
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="box" class="forms-checkbox__box" checked="checked">
+                            <label class="forms-checkbox__label" for="box" ></label>
+                            <span>Option</span>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="box-1" class="forms-checkbox__box" checked="checked">
+                            <label class="forms-checkbox__label" for="box-1"></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="box-2" class="forms-checkbox__box" >
+                            <label class="forms-checkbox__label" for="box-2"></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="box-3" disabled="disabled" class="forms-checkbox__box">
+                            <label class="forms-checkbox__label-disabled"  for="box-3"></label>
+                        </div>
+                    </div>
+                    <div class="forms-radio">
+                        <div class="radio">
+                            <input type="radio" name="radio-active" id="circle" class="forms-radio__box" checked="checked">
+                            <label class="forms-radio__label" for="circle"></label>
+                            <span>Option</span>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="radio" id="circle-1" class="forms-radio__box" checked="checked">
+                            <label class="forms-radio__label" for="circle-1"></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="radio" id="circle-2" class="forms-radio__box">
+                            <label class="forms-radio__label" for="circle-2"></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="radio" id="circle-3" class="forms-radio__box" disabled="disabled">
+                            <label class="forms-radio__label-disabled" for="circle-3"></label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
