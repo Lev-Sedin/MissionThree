@@ -160,20 +160,20 @@ textarea {
 }
 .forms-checkbox {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 .checkbox,
 .radio {
-  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  margin: 10px 10px;
 }
 .forms-checkbox__box {
   display: none;
 }
 .forms-checkbox__label {
   cursor: pointer;
-}
-span {
-  padding: 0 10px;
+  margin: 0 10px;
 }
 .forms-checkbox__label::before {
   content: "";
@@ -211,13 +211,14 @@ span {
 }
 .forms-radio {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 .forms-radio__box {
   display: none;
 }
 .forms-radio__label {
   cursor: pointer;
+  margin: 0 10px;
 }
 .forms-radio__label::before {
   content: "";
@@ -246,4 +247,267 @@ span {
   background: url(../img/svg/Ellipse.svg) 50% no-repeat;
   background-color: #18a0fb;
   box-shadow: none;
+}
+.forms-switch {
+  display: flex;
+  flex-direction: column;
+}
+.switch {
+  display: flex;
+  align-items: center;
+  margin: 10px 10px;
+}
+.form-switch__name {
+  font-weight: 500;
+  order: 2;
+}
+.forms-switch__box {
+  display: none;
+}
+.forms-slider__label {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 32px;
+  order: 1;
+  margin: 0 10px;
+}
+.mini {
+  height: 24px;
+}
+.forms-switch__span {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #e0e0e0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 19px;
+}
+.forms-switch__span-disabled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 19px;
+}
+.forms-switch__span:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 3px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.minis:before {
+  height: 20px;
+  width: 20px;
+  left: 7px;
+  bottom: 2px;
+}
+.forms-switch__span-disabled::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 3px;
+  background: #2c2c2c;
+  opacity: 0.2;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.minis_disabled:before {
+  height: 20px;
+  width: 20px;
+  bottom: 2px;
+}
+.forms-switch__box:checked + .forms-switch__span {
+  background: #00d200;
+}
+.forms-switch__box:focus + .forms-switch__span {
+  box-shadow: 0 0 1px #00d200;
+}
+.forms-switch__box:checked + .forms-switch__span:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+.section-button {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.buttons {
+  margin: 10px 0px;
+}
+.btn {
+  width: 144px;
+  height: 46px;
+  border-radius: 5px;
+  color: #2c2c2c;
+  font-weight: 500;
+  font-size: 15px;
+}
+.small {
+  width: 116px;
+  height: 36px;
+  font-size: 13px;
+}
+.button__blue {
+  background: #18a0fb;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.button__blue_icon {
+  background-image: url(../img/svg/downloadwhite.svg);
+  background-position: 85% 50%;
+  background-repeat: no-repeat;
+  padding-right: 40px;
+}
+.button__blue:hover {
+  border: 2px dashed #ffffff;
+  opacity: 0.8;
+}
+.button__disabled {
+  cursor: auto;
+  background-color: rgba(224, 224, 224, 0.3);
+  color: #878787;
+}
+.button__blue_grey {
+  background-image: url(../img/svg/downloadgrey.svg);
+  background-position: 85% 50%;
+  background-repeat: no-repeat;
+  padding-right: 40px;
+}
+.button__secondary {
+  border: 1px solid #e0e0e0;
+  background: #ffffff;
+}
+.button__secondary:hover {
+  border: 2px dashed #043557;
+}
+.button__blue_black {
+  background-image: url(../img/svg/downloadblack.svg);
+  background-position: 85% 50%;
+  background-repeat: no-repeat;
+  padding-right: 40px;
+}
+.button__secondary:focus {
+  color: #18a0fb;
+  border: 1px solid #18a0fb;
+}
+.button__blue_black:focus {
+  background-image: url(../img/svg/downloadblue.svg);
+  background-position: 85% 50%;
+  background-repeat: no-repeat;
+  padding-right: 40px;
+}
+.button__right {
+  margin-left: 5px;
+}
+.button__left {
+  margin-right: 5px;
+}
+.buttons_tab {
+  width: 56px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  margin: -2px;
+}
+.search {
+  border-radius: 5px 0px 0px 5px;
+  background-image: url(../img/svg/vectorblack.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.search:focus {
+  background-image: url(../img/svg/vectorwhite.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: #18a0fb;
+}
+.donwoload {
+  box-shadow: inset 0px 1px 0px #e0e0e0, inset 0px -1px 0px #e0e0e0;
+  border-radius: 0px;
+  background-image: url(../img/svg/downloadblack.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.donwoload:focus {
+  background-image: url(../img/svg/downloadwhite.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: #18a0fb;
+}
+.archive {
+  border: 1px solid #e0e0e0;
+  border-radius: 0px 5px 5px 0px;
+  background-image: url(../img/svg/boxb.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.archive:focus {
+  background-image: url(../img/svg/boxb.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: #18a0fb;
+}
+.buttons__tab {
+  width: 134px;
+  height: 46px;
+  margin: -2px;
+}
+.buttons__size {
+  width: 107px;
+  height: 46px;
+  margin: -2px;
+}
+.first {
+  border-radius: 5px 0px 0px 5px;
+}
+.first:focus {
+  background: #18a0fb;
+  color: #fff;
+}
+.second {
+  border: 1px solid #e0e0e0;
+  border-radius: 0px 5px 5px 0px;
+}
+.second:focus {
+  background: #18a0fb;
+  color: #fff;
+}
+.third {
+  border: 1px solid #e0e0e0;
+  border-radius: 0px 5px 5px 0px;
+}
+.third:focus {
+  background: #18a0fb;
+  color: #fff;
+}
+.size {
+  box-shadow: inset 0px 1px 0px #e0e0e0, inset 0px -1px 0px #e0e0e0;
+  border-radius: 0px;
 }
