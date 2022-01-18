@@ -511,3 +511,136 @@ textarea {
   box-shadow: inset 0px 1px 0px #e0e0e0, inset 0px -1px 0px #e0e0e0;
   border-radius: 0px;
 }
+.button-tag {
+  display: flex;
+  justify-content: space-around;
+}
+.button__box {
+  width: 65px;
+  height: 28px;
+  border-radius: 5px;
+  position: relative;
+}
+.button__box_white {
+  border: 1px solid #e0e0e0;
+  background: #fff;
+}
+.button__box_blue {
+  background: #18a0fb;
+}
+.button__box_green {
+  background: #32cd32;
+}
+.button__box_red {
+  background: #b22222;
+}
+.button__box_brown {
+  background: #8b4513;
+}
+.button__box_purple {
+  background: #9b30ff;
+}
+.button__box_grey {
+  background: #696969;
+}
+.button__tag {
+  width: 20px;
+  height: 20px;
+  border-radius: 40px;
+  margin-left: 10px;
+  margin-top: 4px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.button__tag_white {
+  background: #fff;
+}
+.button__tag_blue {
+  background: #18a0fb;
+}
+.button__tag_green {
+  background: #32cd32;
+}
+.button__tag_red {
+  background: #b22222;
+}
+.button__tag_brown {
+  background: #8b4513;
+}
+.button__tag_purple {
+  background: #9b30ff;
+}
+.button__tag_grey {
+  background: #696969;
+}
+.button__name {
+  position: relative;
+  top: 5px;
+  left: 10px;
+  color: #fff;
+}
+.button__name_white {
+  color: #18a0fb;
+}
+.button__tag:before {
+  content: "+";
+  position: absolute;
+  z-index: 2;
+  transform: rotate(45deg);
+  font-size: 22px;
+  line-height: 1;
+  top: -2px;
+  left: 4px;
+  transition: all 0.7s cubic-bezier(0.77, 0, 0.2, 0.85);
+  color: #fff;
+}
+.button__tag_white:before {
+  color: #18a0fb;
+}
+
+.button__tag:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  z-index: 1;
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+  transform: scale(0.01);
+  background: #fff;
+}
+.button__tag_white:after {
+  background: #18a0fb;
+}
+
+.button__tag:hover::after {
+  transform: scale(1);
+}
+
+.button__tag:hover::before {
+  transform: scale(0.8) rotate(45deg);
+}
+.button__tag_white:hover::before {
+  color: #fff;
+}
+.button__tag_blue:hover::before {
+  color: #18a0fb;
+}
+.button__tag_green:hover::before {
+  color: #32cd32;
+}
+.button__tag_red:hover::before {
+  color: #b22222;
+}
+.button__tag_brown:hover::before {
+  color: #8b4513;
+}
+.button__tag_purple:hover::before {
+  color: #9b30ff;
+}
+.button__tag_grey:hover::before {
+  color: #696969;
+}
