@@ -464,12 +464,12 @@ textarea {
 .archive {
   border: 1px solid #e0e0e0;
   border-radius: 0px 5px 5px 0px;
-  background-image: url(../img/svg/boxb.svg);
+  background-image: url(../img/svg/Archive.svg);
   background-position: 50%;
   background-repeat: no-repeat;
 }
 .archive:focus {
-  background-image: url(../img/svg/boxb.svg);
+  background-image: url(../img/svg/archivewhite.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-color: #18a0fb;
@@ -512,13 +512,14 @@ textarea {
   border-radius: 0px;
 }
 .button-tag {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 90px);
 }
 .button__box {
   width: 65px;
   height: 28px;
   border-radius: 5px;
+  margin: 10px;
   position: relative;
 }
 .button__box_white {
