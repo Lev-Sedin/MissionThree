@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MissionThree</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script defer src="js/tab.js"></script>
+    <script defer src="js/counter.js"></script>
+
+    <title>MissionThree</title>
+    
 </head>
 <body>
     <main>
@@ -214,11 +218,61 @@
                             <span class="button__name button__name_grey ">Tag</span>
                             <button type="btn" class="button__tag button__tag_grey"></button>
                         </div>
+                        <div class="button__box button__box_darkgreen">
+                            <span class="button__name button__name_darkgreen ">Tag</span>
+                            <button type="btn" class="button__tag button__tag_darkgreen"></button>
+                        </div>
+                        <div class="button__box button__box_orange">
+                            <span class="button__name button__name_orange ">Tag</span>
+                            <button type="btn" class="button__tag button__tag_orange"></button>
+                        </div>
                     </div>
                 </div>
-                <div class="section-select">
-
+                <div class="section-slider">
+                    <div class="sliders">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
                 </div>
+                <h2 class="h2-title">Tabs</h2>
+                <div class="tab">
+                    <ul class="tab__buttons">
+                        <li class="tab__btn">
+                            <button class="tab__change active" type="button">Current Tab</button>
+                        </li>
+                        <li class="tab__btn">
+                            <button class="tab__change" type="button">Second Tab</button>
+                        </li>
+                        <li class="tab__btn">
+                            <button class="tab__change" type="button">Third Tab</button>
+                        </li>
+                    </ul>
+                    <ul class="tab__buttons">
+                        <li class="tab__btn">
+                            <button class="tab__change tab__icon_1 " type="button"> Current Tab</button>
+                        </li>
+                        <li class="tab__btn">
+                            <button class="tab__change tab__icon_2" type="button">Second Tab</button>
+                        </li>
+                        <li class="tab__btn">
+                            <button class="tab__change tab__icon_3" type="button">Third Tab</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="counter">
+                    <div class="counter__model">
+                        <button class="counter__btn counter-down">
+                            <div class="left-arrow"></div>
+                        </button>
+                        <span class="counter__number">1</span>
+                        <button class="counter__btn  counter-up">
+                            <div class="right-arrow"></div>
+                        </button>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                
             </section>
         </div>
     </main>

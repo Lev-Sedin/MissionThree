@@ -544,6 +544,12 @@ textarea {
 .button__box_grey {
   background: #696969;
 }
+.button__box_darkgreen {
+  background: #006400;
+}
+.button__box_orange {
+  background: #ff4500;
+}
 .button__tag {
   width: 20px;
   height: 20px;
@@ -574,6 +580,12 @@ textarea {
 }
 .button__tag_grey {
   background: #696969;
+}
+.button__tag_darkgreen {
+  background: #006400;
+}
+.button__tag_orange {
+  background: #ff4500;
 }
 .button__name {
   position: relative;
@@ -644,4 +656,117 @@ textarea {
 }
 .button__tag_grey:hover::before {
   color: #696969;
+}
+.button__tag_darkgreen:hover::before {
+  color: #006400;
+}
+.button__tag_orange:hover::before {
+  color: #ff4500;
+}
+.tab {
+  display: flex;
+  justify-content: space-around;
+}
+.tab__buttons {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  vertical-align: center;
+}
+.tab__change {
+  border: 1px solid transparent;
+  background-color: transparent;
+  padding: 11px 38px;
+}
+.tab__change:focus {
+  color: #18a0fb;
+}
+.tab__change.active {
+  color: #18a0fb;
+  border-bottom: 1px solid #18a0fb;
+}
+.tab__icon_1 {
+  background-image: url(../img/svg/searchblack.svg);
+  background-position: 7% 50%;
+  background-repeat: no-repeat;
+  padding-right: 40px;
+}
+.tab__icon_1:focus {
+  background-image: url(../img/svg/Searchblue.svg);
+}
+.tab__icon_2 {
+  background-image: url(../img/svg/Archiveblack.svg);
+  background-position: 7% 50%;
+  background-repeat: no-repeat;
+  padding-right: 40px;
+}
+.tab__icon_2:focus {
+  background-image: url(../img/svg/Archiveblue.svg);
+}
+
+.tab__icon_3 {
+  background-image: url(../img/svg/downloadblack.svg);
+  background-position: 7% 50%;
+  background-repeat: no-repeat;
+  padding-right: 40px;
+}
+
+.tab__icon_3:focus {
+  background-image: url(../img/svg/downloadblue.svg);
+}
+.counter__model {
+  width: 100px;
+  height: 42px;
+  border: 1px solid #18a0fb;
+  border-radius: 100px;
+  margin: 20px 0;
+  background-color: #474a51;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.counter__btn {
+  margin: 1px 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+}
+.counter-down {
+  background: #ffffff;
+  margin-left: 2px;
+}
+.counter-down:hover {
+  box-shadow: 0px 0px 5px #18a0fb;
+}
+
+.counter-up {
+  background: #18a0fb;
+  margin-right: 2px;
+  /* position: relative;
+  right: -9px; */
+}
+.counter-up:hover {
+  box-shadow: 0px 0px 5px #ffffff;
+}
+.left-arrow,
+.right-arrow {
+  display: inline-flex;
+  width: 8px;
+  height: 8px;
+}
+.left-arrow {
+  border-top: 2px solid #18a0fb;
+  border-left: 2px solid #18a0fb;
+  transform: rotate(-45deg);
+  margin-left: 3px;
+}
+.right-arrow {
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  transform: rotate(-45deg);
+  margin-right: 3px;
+}
+.counter__number {
+  color: white;
+  left: 10px;
 }
