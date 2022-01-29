@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <script defer src="js/tab.js"></script>
     <script defer src="js/counter.js"></script>
+    <script defer src="js/upload.js"></script>
+    
 
     <title>MissionThree</title>
     
@@ -20,35 +22,35 @@
                 <div class="forms-section">
                     <div class="forms-inputs">
                         <div class="form-section__item">
-                            <h3 class="h3-title form-section__name">Input Disabled</h3>
+                            <h4 class="h4-title form-section__name">Input Disabled</h4>
                             <input type="text" placeholder="Placeholder" class="forms-section__input">
                         </div>
                         <div class="form-section__item">
-                            <h3 class="h3-title form-section__name">Input Focused</h3>
+                            <h4 class="h4-title form-section__name">Input Focused</h4>
                             <input type="text" placeholder="Value" class="forms-section__input focus-input">
                         </div>
                         <div class="form-section__item">
-                            <h3 class="h3-title form-section__name">Input Error</h3>
+                            <h4 class="h4-title form-section__name">Input Error</h4>
                             <input type="text" placeholder="Value" disabled="disabled" class="forms-section__input error-input">
                         </div>
                     </div>
                     <div class="forms-search">
                         <div class="form-section__item">
-                            <h3 class="h3-title form-section__name">Search Disabled</h3>
+                            <h4 class="h4-title form-section__name">Search Disabled</h4>
                             <div class="forms-section_wrapper">
                                 <input type="text" placeholder="Placeholder" class="forms-section__input">
                                 <img class="form-section__icon" src="img/svg/Vector.svg" alt="">
                             </div>
                         </div>
                         <div class="form-section__item">
-                            <h3 class="h3-title form-section__name">Search Focused</h3>
+                            <h4 class="h4-title form-section__name">Search Focused</h4>
                             <div class="forms-section_wrapper">
                                 <input type="text" placeholder="Placeholder" class="forms-section__input focus-input">
                                 <img class="form-section__icon" src="img/svg/Vector.svg" alt="">
                             </div>
                         </div>
                         <div class="form-section__item">
-                            <h3 class="h3-title form-section__name">Search Error</h3>
+                            <h4 class="h4-title form-section__name">Search Error</h4>
                             <div class="forms-section_wrapper">
                                 <input type="text" placeholder="Placeholder" class="forms-section__input error-input">
                                 <img class="form-section__icon" src="img/svg/Vector.svg" alt="">
@@ -57,11 +59,11 @@
                     </div>
                     <div class="forms-textarea">
                         <div class="form-section__item">
-                            <h3 class="h3-title form-section__name">Search Error</h3>
+                            <h4 class="h4-title form-section__name">Search Error</h4>
                             <textarea name="text" id="textarea" placeholder="Placeholder" class="forms-section__input"></textarea>
                         </div>
                         <div class="form-section__item">
-                            <h3 class="h3-title form-section__name">Search Error</h3>
+                            <h4 class="h4-title form-section__name">Search Error</h4>
                             <textarea name="text" id="textarea" placeholder="Value" class="forms-section__input error-input"></textarea>
                         </div>
                     </div>
@@ -69,7 +71,7 @@
                 <div class="forms-section">
                     <div class="forms-checkbox">
                         <div class="checkbox">
-                            <h3 class="h3-title form-switch__name">Option</h3>
+                            <h4 class="h4-title form-switch__name">Option</h4>
                             <input type="checkbox" name="" id="box" class="forms-checkbox__box" checked="checked">
                             <label class="forms-checkbox__label" for="box" ></label>
                         </div>
@@ -84,7 +86,7 @@
                     </div>
                     <div class="forms-radio">
                         <div class="radio">
-                            <h3 class="h3-title form-switch__name">Option</h3>
+                            <h4 class="h4-title form-switch__name">Option</h4>
                             <input type="radio" name="radio-active" id="circle" class="forms-radio__box" checked="checked">
                             <label class="forms-radio__label" for="circle"></label>
                         </div>
@@ -99,7 +101,7 @@
                     </div>
                     <div class="forms-switch">
                         <div class="switch">
-                            <h3 class="h3-title form-switch__name">Option</h3>
+                            <h4 class="h4-title form-switch__name">Option</h4>
                             <label for="slider" class="forms-slider__label">
                                 <input type="checkbox" id="slider" class="forms-switch__box" checked="checked">
                                 <span class="forms-switch__span"></span>
@@ -272,7 +274,27 @@
 
                     </div>
                 </div>
-                
+                <h2 class="h2-title">Upload</h2>
+                <div class="">
+                    <div class="donwoload__box">
+                        <input type="file" class="button__file" hidden="hidden">
+                        <button class="donwoload__btn">
+                            <img class="donwoload__icon" src="img/svg/upload/uploadgrey.svg" alt="">
+                            <h3 class="h3-title donwoload__title">Add Files</h4>
+                            <label for="" class="donwoload__label">Drag & Drop to upload or</label>
+                            <span class="donwoload__text">UPLOAD</span>
+                        </button>
+                    </div>
+                    <div class="donwoload__box error" >
+                        <input type="file" class="button__file" id="button-error" hidden="hidden">
+                        <button class="donwoload__btn" id="donwoload-error">
+                            <img class="donwoload__icon" src="img/svg/upload/uploadred.svg" alt="">
+                            <h3 class="h3-title donwoload__title donwoload__title_error">Something went wrong.</h4>
+                            <label for="" class="donwoload__label">Please try again</label>
+                            <span class="donwoload__text" id="donwoload-text-error">UPLOAD</span>
+                        </button>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
