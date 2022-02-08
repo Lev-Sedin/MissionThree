@@ -5,11 +5,16 @@ const counterFunc = () =>{
 
     counterUp.addEventListener("click", (countUp));
     function countUp(){
-        counterPage.innerHTML ++
+        if(counterPage.innerHTML < 5 ){
+            counterPage.innerHTML ++
+        }
     }
     counterDown.addEventListener("click", (countDowm));
     function countDowm(){
-        counterPage.innerHTML --
+        if(counterPage.innerHTML > 1 ){
+            counterPage.innerHTML --
+        }
     }
 }
 counterFunc()
+

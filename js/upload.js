@@ -40,3 +40,26 @@ const errorFuns =() =>{
 
 }
 errorFuns()
+
+
+
+const successFuns =() =>{
+    const uploadFile = document.getElementById("button-success");
+    const uploadBtn = document.getElementById("donwoload-success");
+    const uploadText = document.getElementById("donwoload-text-success");
+
+    uploadBtn.addEventListener("click", function (){
+        uploadFile.click ();
+    })
+
+    uploadFile.addEventListener("change", function(){
+        if (uploadFile.value){
+            uploadText.innerText = uploadFile.value.match(/[\/\\]([\w\d\s\.\-(\)]+)$/)[1];
+        }else{
+            uploadText.innerText = "UPLOAD"
+        }
+            
+    })
+
+}
+successFuns()
