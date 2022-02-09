@@ -8,7 +8,7 @@ let page = 0
 // console.log(paginationDown)
 
 
-
+paginationsPage[0].classList.add('pagination-active')
 
 paginationUp.addEventListener("click", (pageUp));
     function pageUp (){

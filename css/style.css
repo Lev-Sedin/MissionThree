@@ -128,6 +128,9 @@ body {
   background: rgba(224, 224, 224, 0.3);
   border: 1px solid #e0e0e0;
 }
+.forms-section__input__search {
+  padding-right: 36px;
+}
 .focus-input {
   border: 1px solid #18a0fb;
 }
@@ -143,10 +146,19 @@ body {
 .forms-section_wrapper {
   position: relative;
 }
+.button__search {
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  left: 196px;
+  width: 32px;
+  height: 35px;
+  background: transparent;
+}
 .form-section__icon {
   position: absolute;
   top: 50%;
-  right: 16px;
+  right: 8px;
   transform: translateY(-50%);
   width: 15px;
   height: 15px;
@@ -897,6 +909,7 @@ textarea {
 }
 .pagination_list {
   display: flex;
+  margin: 3px 0;
 }
 .pagination__link {
   margin: 10px;
@@ -910,6 +923,10 @@ textarea {
   opacity: 1;
 }
 .pagination__item:hover {
+  color: #18a0fb;
+  opacity: 1;
+}
+.pagination__item:focus {
   color: #18a0fb;
   opacity: 1;
 }
@@ -927,17 +944,16 @@ textarea {
   border-top: 2px solid #18a0fb;
   border-left: 2px solid #18a0fb;
   transform: rotate(-45deg);
-  margin-left: 3px;
+  margin-left: 15px;
 }
 .pagination-arrow__right {
   border-bottom: 2px solid #18a0fb;
   border-right: 2px solid #18a0fb;
   transform: rotate(-45deg);
-  margin-right: 3px;
+  margin-right: 15px;
 }
 .select {
   display: flex;
-  align-items: end;
   justify-content: space-around;
 }
 .option__title {
@@ -955,4 +971,51 @@ textarea {
   font-size: 13px;
   color: #2c2c2c;
   opacity: 0.5;
+}
+.calendar__box {
+  max-width: 200px;
+}
+#Datepickk.inline.d-show .d-calendar {
+  border-radius: 10px;
+}
+#Datepickk .d-header p {
+  margin: 1em 0;
+}
+#Datepickk .d-header {
+  color: #2c2c2c;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: rgba(24, 160, 251, 0.1);
+  border-radius: 5px;
+}
+#Datepickk .d-year-picker {
+  background-color: rgba(27, 54, 63, 0.9);
+}
+#Datepickk .d-month-picker.d-show,
+.d-year-picker.d-show {
+  font-size: 13px;
+  font-weight: 500;
+}
+#Datepickk .d-weekdays {
+  margin: 0 11px 0 17px;
+}
+#Datepickk .d-week {
+  background-color: #fff;
+  color: #2c2c2c;
+  font-size: 12px;
+}
+#Datepickk .d-tables {
+  font-size: 12px;
+  line-height: 230%;
+}
+#Datepickk .d-table input + label:before {
+  border-radius: 11px;
+  background-color: #18a0fb;
+}
+#Datepickk
+  .d-tables.range:not(.before)
+  input:not(.single):checked
+  + label
+  ~ label:not(.hidden):before {
+  background-color: #18a0fb;
 }
