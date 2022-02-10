@@ -562,6 +562,65 @@ textarea {
 .button__box_orange {
   background: #ff4500;
 }
+.section-slider {
+  margin-top: 20px;
+}
+.sliders {
+  display: flex;
+  justify-content: space-between;
+}
+.slider {
+  min-width: 200px;
+}
+.noUi-target {
+  background: #e0e0e0;
+  border-radius: 10px;
+  border: 1px solid #d3d3d3;
+}
+.noUi-horizontal .noUi-handle {
+  width: 29px;
+  height: 29px;
+  right: -17px;
+  top: -6px;
+  border-radius: 76px;
+}
+.noUi-connects {
+  border-radius: 10px;
+}
+.noUi-connect {
+  background: #18a0fb;
+}
+
+.noUi-tooltip {
+  display: block;
+  position: absolute;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  background: #18a0fb;
+  color: #fafbfd;
+  font-size: 10px;
+  font-weight: 500;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  padding-top: 12px;
+}
+.noUi-tooltip::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #18a0fb;
+  bottom: -7px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.section-tag {
+  padding-bottom: 40px;
+}
 .button__tag {
   width: 20px;
   height: 20px;
@@ -674,6 +733,10 @@ textarea {
 }
 .button__tag_orange:hover::before {
   color: #ff4500;
+}
+.container-second {
+  max-width: 1240px;
+  margin: 0 auto;
 }
 .tab {
   display: flex;
@@ -1017,5 +1080,30 @@ textarea {
   input:not(.single):checked
   + label
   ~ label:not(.hidden):before {
+  background-color: rgba(24, 160, 251, 0.2);
+}
+#Datepickk
+  .d-tables.range:not(.before)
+  input:not(.single):checked
+  ~ input:checked
+  + label:before {
   background-color: #18a0fb;
+}
+#Datepickk .d-tables.range:not(.before) input:not(.single):checked + label,
+#Datepickk
+  .d-tables.range:not(.before)
+  input:not(.single):checked
+  + label
+  ~ label:not(.hidden) {
+  color: #2c2c2c;
+}
+#Datepickk
+  .d-tables.range:not(.before)
+  input:not(.single):checked
+  ~ input:checked
+  + label {
+  color: #fff;
+}
+#Datepickk .d-tables.range:not(.before) input:not(.single):checked + label {
+  color: #fff;
 }
