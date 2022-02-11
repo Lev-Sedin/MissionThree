@@ -1015,6 +1015,7 @@ textarea {
   transform: rotate(-45deg);
   margin-right: 15px;
 }
+
 .select {
   display: flex;
   justify-content: space-around;
@@ -1106,4 +1107,55 @@ textarea {
 }
 #Datepickk .d-tables.range:not(.before) input:not(.single):checked + label {
   color: #fff;
+}
+.step-bar {
+  position: relative;
+}
+.step-bar_pozition {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.steps {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+.step {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid #acaca6;
+  border-radius: 50%;
+  transition: background-color 1s;
+}
+.step-bar__selected {
+  border: 2px solid #18a0fb;
+  background: url(../img/svg/Ellipse.svg) 50% no-repeat;
+  background-color: #18a0fb;
+  box-shadow: none;
+}
+.step-bar__completed {
+  border: 2px solid #18a0fb;
+  background: url(../img/svg/v.svg) 50% no-repeat;
+  background-color: #18a0fb;
+  box-shadow: none;
+}
+
+.step-bar__progress {
+  position: absolute;
+  width: 100%;
+  height: 56%;
+  border-bottom: 2px solid #acaca6;
+  z-index: -1;
+}
+.step-bar__percent {
+  position: absolute;
+  width: 0;
+  height: 131%;
+  border-bottom: 2px solid #18a0fb;
+  z-index: 1;
+  transition: width 1s;
 }

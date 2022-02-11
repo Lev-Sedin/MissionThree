@@ -267,3 +267,30 @@
 // console.log(text.toUpperCase())
 // console.log(text.slice(3,6))
 // console.log(text.includes("лан",4))
+
+
+// let arr = ["L","V","m",];
+// let newArr= arr
+// newArr.push("C")
+// console.log(arr.length)
+
+let users = ["Ваня","Иштан"]
+
+users.push("Оля")
+
+users.splice(1,1,"Петя")
+
+let arr = users.splice(0,1)
+users.splice(0,0,"Маша","Паша")
+console.log(arr)
+console.log(users)
+
+let usersNew = ["Ваня","Иштан","Оля"]
+let arrNew = usersNew.splice(1,1)
+console.log(arrNew)
+
+
+let strr = "Ваня,Иштан,Оля";
+
+let strrr = strr.split(",")
+console.log(strrr)
