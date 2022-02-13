@@ -277,79 +277,97 @@
                     </div>
                 </div>
                 <div class="container-second">
-                    <h2 class="h2-title">Tabs</h2>
-                    <div class="tab">
-                        <ul class="tab__buttons">
-                            <li class="tab__btn">
-                                <button class="tab__change active" type="button">Current Tab</button>
-                            </li>
-                            <li class="tab__btn">
-                                <button class="tab__change" type="button">Second Tab</button>
-                            </li>
-                            <li class="tab__btn">
-                                <button class="tab__change" type="button">Third Tab</button>
-                            </li>
-                        </ul>
-                        <ul class="tab__buttons">
-                            <li class="tab__btn">
-                                <button class="tab__change tab__icon_1 " type="button"> Current Tab</button>
-                            </li>
-                            <li class="tab__btn">
-                                <button class="tab__change tab__icon_2" type="button">Second Tab</button>
-                            </li>
-                            <li class="tab__btn">
-                                <button class="tab__change tab__icon_3" type="button">Third Tab</button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="counter">
-                        <div class="counter__model">
-                            <button class="counter__btn counter-down">
-                                <div class="left-arrow"></div>
-                            </button>
-                            <span class="counter__number">1</span>
-                            <button class="counter__btn  counter-up">
-                                <div class="right-arrow"></div>
-                            </button>
+                    <div class="tabs">
+                        <h2 class="h2-title">Tabs</h2>
+                        <div class="tab">
+                            <ul class="tab__buttons">
+                                <li class="tab__btn">
+                                    <button class="tab__change active" type="button">Current Tab</button>
+                                </li>
+                                <li class="tab__btn">
+                                    <button class="tab__change" type="button">Second Tab</button>
+                                </li>
+                                <li class="tab__btn">
+                                    <button class="tab__change" type="button">Third Tab</button>
+                                </li>
+                            </ul>
+                            <ul class="tab__buttons">
+                                <li class="tab__btn">
+                                    <button class="tab__change tab__icon_1 " type="button"> Current Tab</button>
+                                </li>
+                                <li class="tab__btn">
+                                    <button class="tab__change tab__icon_2" type="button">Second Tab</button>
+                                </li>
+                                <li class="tab__btn">
+                                    <button class="tab__change tab__icon_3" type="button">Third Tab</button>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="pagination">
-                            <div class="pagination__model">
-                                <button class="pagination_btn pagination-down ">
-                                    <div class="pagination-arrow__left"></div>
+                        <div class="counter">
+                            <div class="counter__model">
+                                <button class="counter__btn counter-down">
+                                    <div class="left-arrow"></div>
                                 </button>
-                                <ul class="pagination_list">
-                                    <li class="pagination__link"><a class="pagination__item" target="_blank" href="#">1</a></li>
-                                    <li class="pagination__link"><a class="pagination__item" target="_blank" href="#">2</a></li>
-                                    <li class="pagination__link"><a class="pagination__item" target="_blank" href="#">3</a></li>
-                                    <li class="pagination__link"><a class="pagination__item" target="_blank" href="#">4</a></li>
-                                    <li class="pagination__link"><a class="pagination__item" target="_blank" href="#">5</a></li>
-                                </ul>
-                                <button class="pagination_btn pagination-up">
-                                    <div class="pagination-arrow__right"></div>
+                                <span class="counter__number">1</span>
+                                <button class="counter__btn  counter-up">
+                                    <div class="right-arrow"></div>
                                 </button>
                             </div>
-                        </div>
-                        <div class="step-bar">
-                            <div class="step-bar_pozition">
-                                <div class="step-bar__progress">
-                                    <div class="step-bar__percent"></div>
-                                </div>
-                                <div class="steps">
-                                    <div class="step" id="0"></div>
-                                    <div class="step" id="1"></div>
-                                    <div class="step" id="2"></div>
-                                    <div class="step" id="3"></div>
+                            <div class="pagination">
+                                <div class="pagination__model">
+                                    <button class="pagination_btn pagination-down ">
+                                        <div class="pagination-arrow__left"></div>
+                                    </button>
+                                    <ul class="pagination_list">
+                                        <li class="pagination__link"><a class="pagination__item" target="_blank" href="#">1</a></li>
+                                        <li class="pagination__link"><a class="pagination__item" target="_blank" href="#">2</a></li>
+                                        <li class="pagination__link"><a class="pagination__item" target="_blank" href="#">3</a></li>
+                                        <li class="pagination__link"><a class="pagination__item" target="_blank" href="#">4</a></li>
+                                        <li class="pagination__link"><a class="pagination__item" target="_blank" href="#">5</a></li>
+                                    </ul>
+                                    <button class="pagination_btn pagination-up">
+                                        <div class="pagination-arrow__right"></div>
+                                    </button>
                                 </div>
                             </div>
                         </div>
+                        <div class="step-bars">
+                            <div class="step-bar step-bar__horizontal">
+                                <div class="step-bar_pozition">
+                                    <div class="step-bar__progress">
+                                        <div class="step-bar__percent"></div>
+                                    </div>
+                                    <div class="steps">
+                                        <div class="step" id="0"></div>
+                                        <div class="step" id="1"></div>
+                                        <div class="step" id="2"></div>
+                                        <div class="step" id="3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-bar step-bar__vertical">
+                                <div class="step-bar_pozition step-bar_pozition__vertical">
+                                    <div class="step-bar__progress step-bar__progress__vertical">
+                                        <div class="step-bar__percent step-bar__percent__vertical"></div>
+                                    </div>
+                                    <div class="steps steps__vertical">
+                                        <div class="step" id="0"></div>
+                                        <div class="step" id="1"></div>
+                                        <div class="step" id="2"></div>
+                                        <div class="step" id="3"></div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
-                    <h2 class="h2-title">Upload</h2>
-                    <div class="upload">
-                        <div class="donwoload__box">
-                            <input type="file" class="button__file" hidden="hidden">
-                            <button class="donwoload__btn">
-                                <img class="donwoload__icon" src="img/svg/upload/uploadgrey.svg" alt="">
-                                <h3 class="h3-title donwoload__title">Add Files</h4>
+                </div>
+
+                <h2 class="h2-title">Upload</h2>
+                <div class="upload">
+                    <div class="donwoload__box">
+                        <input type="file" class="button__file" hidden="hidden">
+                        <button class="donwoload__btn">
+                            <img class="donwoload__icon" src="img/svg/upload/uploadgrey.svg" alt="">
+                                <h3 class="h3-title donwoload__title">Add Files</h3>
                                     <label for="" class="donwoload__label">Drag & Drop to upload or</label>
                                     <span class="donwoload__text"></span>
                             </button>
@@ -358,7 +376,7 @@
                             <input type="file" class="button__file" id="button-error" hidden="hidden">
                             <button class="donwoload__btn" id="donwoload-error">
                                 <img class="donwoload__icon" src="img/svg/upload/uploadred.svg" alt="">
-                                <h3 class="h3-title donwoload__title donwoload__title_error">Something went wrong.</h4>
+                                <h3 class="h3-title donwoload__title donwoload__title_error">Something went wrong.</h3>
                                     <label for="" class="donwoload__label">Please try again</label>
                                     <span class="donwoload__text" id="donwoload-text-error"></span>
                             </button>
