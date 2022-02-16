@@ -274,23 +274,23 @@
 // newArr.push("C")
 // console.log(arr.length)
 
-let users = ["Ваня","Иштан"]
+// let users = ["Ваня","Иштан"]
 
-users.push("Оля")
+// users.push("Оля")
 
-users.splice(1,1,"Петя")
+// users.splice(1,1,"Петя")
 
-let arr = users.splice(0,1)
-users.splice(0,0,"Маша","Паша")
-console.log(arr)
-console.log(users)
+// let arr = users.splice(0,1)
+// users.splice(0,0,"Маша","Паша")
+// console.log(arr)
+// console.log(users)
 
-let usersNew = ["Ваня","Иштан","Оля"]
-let arrNew = usersNew.splice(1,1)
-console.log(arrNew)
+// let usersNew = ["Ваня","Иштан","Оля"]
+// let arrNew = usersNew.splice(1,1)
+// console.log(arrNew)
 
 
-let strr = "Ваня,Иштан,Оля";
+// let strr = "Ваня,Иштан,Оля";
 
-let strrr = strr.split(",")
-console.log(strrr)
+// let strrr = strr.split(",")
+// console.log(strrr)
