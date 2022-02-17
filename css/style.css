@@ -857,11 +857,30 @@ textarea {
   justify-content: space-between;
   align-items: center;
 }
+.counter__model__box {
+  width: 83px;
+  border-radius: 5px;
+}
 .counter__btn {
   margin: 1px 0;
   width: 36px;
   height: 36px;
   border-radius: 100px;
+}
+.counter__btn__box {
+  border-radius: 5px;
+  margin: 1px 1px;
+  width: 36px;
+  height: 36px;
+}
+.counter__btn__box:hover {
+  box-shadow: 0px 0px 5px #18a0fb;
+}
+.counter__btn__right {
+  background: #18a0fb;
+}
+.counter__btn__right:hover {
+  box-shadow: 0px 0px 5px #ffffff;
 }
 .counter-down {
   background: #ffffff;
@@ -1048,6 +1067,7 @@ textarea {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 320px);
+  margin-bottom: 20px;
 }
 .pagination {
   background: #fff;
@@ -1247,6 +1267,7 @@ textarea {
 .step-bar {
   position: relative;
   display: inline-block;
+  min-height: 300px;
 }
 .step-bar_pozition {
   position: absolute;
@@ -1254,10 +1275,7 @@ textarea {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.step-bar_pozition__vertical {
-  top: 30%;
-  left: 30%;
-}
+
 .step-bar_pozition__mini {
   transform: translate(-246%, -650%);
 }
@@ -1291,6 +1309,7 @@ textarea {
   border-radius: 50%;
   width: 10px;
   height: 10px;
+  color: rgba(44, 44, 44, 0.5);
 }
 
 .step__text {
@@ -1301,17 +1320,12 @@ textarea {
   left: -13px;
   font-size: 13px;
   font-weight: 500;
-  color: #2c2c2c;
-  opacity: 0.5;
 }
 .step__text:hover {
   cursor: pointer;
   color: #2c2c2c;
-  opacity: 1;
 }
-.step__text_completed {
-  opacity: 1;
-}
+
 .step-bar__selected {
   border: 2px solid #18a0fb;
   background: url(../img/svg/Ellipse.svg) 50% no-repeat;
@@ -1321,6 +1335,7 @@ textarea {
 .step-bar__selected__mini {
   background: #18a0fb;
   border: none;
+  color: rgba(44, 44, 44, 1);
 }
 .step-bar__completed {
   border: 2px solid #18a0fb;
