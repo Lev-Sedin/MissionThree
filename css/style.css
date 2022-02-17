@@ -1044,16 +1044,44 @@ textarea {
   border: 1px solid #e0e0e0;
   border-radius: 5px;
 }
+.paginations {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 320px);
+}
 .pagination {
-  max-width: 189px;
-  height: 40px;
   background: #fff;
   align-items: center;
+  max-width: 189px;
+}
+.pagination-big {
+  min-width: 320px;
+  background: #fff;
 }
 .pagination__model {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.choices {
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  min-width: 66px;
+  color: #8b8b8b;
+}
+.choices[data-type*="select-one"]::after {
+  border-color: black transparent transparent;
+  opacity: 0.4;
+}
+
+.choices__list--single {
+  padding-right: 28px;
+}
+.choices__inner {
+  border: 1px solid rgba(139, 139, 139, 0.2);
 }
 .pagination_list {
   display: flex;
@@ -1082,6 +1110,25 @@ textarea {
   width: 36px;
   height: 36px;
 }
+.pagination__text {
+  font-weight: 500;
+  font-size: 13px;
+  color: #8b8b8b;
+}
+.pagination__text__left {
+  padding-left: 13px;
+}
+.pagination__text__right {
+  color: rgba(24, 160, 251, 1);
+  padding-right: 14px;
+}
+
+.pagination__button {
+  width: 89px;
+  height: 36px;
+  background: rgba(224, 224, 224, 0.3);
+  border-radius: 5px;
+}
 .pagination-arrow__left,
 .pagination-arrow__right {
   display: inline-flex;
@@ -1089,8 +1136,8 @@ textarea {
   height: 8px;
 }
 .pagination-arrow__left {
-  border-top: 2px solid #18a0fb;
-  border-left: 2px solid #18a0fb;
+  border-top: 2px solid rgba(44, 44, 44, 0.5);
+  border-left: 2px solid rgba(44, 44, 44, 0.5);
   transform: rotate(-45deg);
   margin-left: 15px;
 }
@@ -1242,7 +1289,6 @@ textarea {
   position: relative;
   background: #e0e0e0;
   border-radius: 50%;
-  /* transition: background-color 1s; */
   width: 10px;
   height: 10px;
 }

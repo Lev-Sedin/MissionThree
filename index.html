@@ -350,12 +350,13 @@
                                         <path
                                             d="M0 0H76C83.732 0 90 6.26801 90 14C90 21.732 83.732 28 76 28H0L7.71649 14.4961C7.89217 14.1887 7.89217 13.8113 7.71649 13.5039L0 0Z" />
                                     </svg>
-                            
                                 </a>
                             </div>
+                        </div>
+                        <div class="paginations">
                             <div class="pagination">
                                 <div class="pagination__model">
-                                    <button class="pagination_btn pagination-down ">
+                                    <button class="pagination__btn pagination-down ">
                                         <div class="pagination-arrow__left"></div>
                                     </button>
                                     <ul class="pagination_list">
@@ -365,7 +366,32 @@
                                         <li class="pagination__link"><a class="pagination__item" target="_blank" href="#">4</a></li>
                                         <li class="pagination__link"><a class="pagination__item" target="_blank" href="#">5</a></li>
                                     </ul>
-                                    <button class="pagination_btn pagination-up">
+                                    <button class="pagination__btn pagination-up">
+                                        <div class="pagination-arrow__right"></div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="pagination-big">
+                                <div class="pagination__model">
+                                    <button class="pagination__button">
+                                        <div class="pagination-arrow__left"></div>
+                                        <span class="pagination__text  pagination__text__left">Prev</span>
+                                    </button>
+                                    <select name="pagination" id="pagination" class="pagination__select">
+                                        <option value="One">1</option>
+                                        <option value="Two">2</option>
+                                        <option value="Three">3</option>
+                                        <option value="Four">4</option>
+                                        <option value="Five">5</option>
+                                        <option value="Six">6</option>
+                                        <option value="Seven">7</option>
+                                        <option value="Eight">8</option>
+                                        <option value="Nine">9</option>
+                                        <option value="Ten">10</option>
+                                    </select>
+                                    <span>of 10</span>
+                                    <button class="pagination__button ">
+                                        <span class="pagination__text pagination__text__right">Next</span>
                                         <div class="pagination-arrow__right"></div>
                                     </button>
                                 </div>

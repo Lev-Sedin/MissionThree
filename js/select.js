@@ -13,3 +13,10 @@ const defaultChoose = () =>{
     });
 }
 defaultChoose()
+const choosePage = () =>{
+    const element = document.querySelector('.pagination__select');
+    const choices = new Choices(element,{
+        searchEnabled: false,
+    });
+}
+choosePage()
