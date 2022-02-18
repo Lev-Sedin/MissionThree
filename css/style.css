@@ -107,7 +107,6 @@ body {
 }
 .h4-title {
   font-size: 13px;
-  color: #2c2c2c;
 }
 .forms-section {
   padding-top: 30px;
@@ -1066,7 +1065,6 @@ textarea {
 .paginations {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, 320px);
   margin-bottom: 20px;
 }
 .pagination {
@@ -1381,4 +1379,40 @@ textarea {
 }
 .step-bar__percent__mini {
   max-width: 100%;
+}
+.allert-zones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  justify-content: space-around;
+  box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  min-height: 42px;
+  color: #ffffff;
+  margin: 20px 0;
+  font-size: 13px;
+}
+.allert-zones__box {
+  background: #18a0fb;
+  width: 313px;
+
+  padding: 9px 13px;
+  border-radius: 5px;
+}
+.allert-zone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.allert-zone__white {
+  background: #ffffff;
+  border: 1px solid rgba(224, 224, 224, 0.15);
+  box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.12);
+  color: #2c2c2c;
+}
+.allert-zone__text {
+  font-weight: bold;
+}
+.allert-zone__allert {
+  margin-top: 10px;
+  padding-bottom: 15px;
 }
