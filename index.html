@@ -22,6 +22,7 @@
     <script defer src="js/practic.js"></script>
     <script defer src="js/pagination.js"></script>
     <script defer src="js/stepbar.js"></script>
+    <script defer src="js/modal.js"></script>
     
 
     <title>MissionThree</title>
@@ -520,8 +521,54 @@
                             <span class="allert-zone__allert">Alert details go here.</span>
                         </div>
                     </div>
+                    <div class="allert-zones">
+                        <div class="allert-zones__box allert-zones__box-red">
+                            <span class="circle-allert"></span>
+                            <div class="allert-zone allert-zone__red ">
+                                <h4 class="h4-title allert-zone__text">This is an alert</h4>
+                                <span class="allert-zone__allert">Alert details go here.</span>
+                            </div>
+                            <div class="allert-zone__buttons">
+                                <button class="allert-btn allert-btn__up">Open</button>
+                                <button class="allert-btn allert-btn__down">Dismiss</button>
+                            </div>
+                        </div>
+                        <div class="allert-zones__box allert-zones__box-red allert-zones__box-red__white">
+                            <span class="circle-allert circle-allert__red"></span>
+                            <div class="allert-zone allert-zone__red ">
+                                <h4 class="h4-title allert-zone__text">This is an alert</h4>
+                                <span class="allert-zone__allert">Alert details go here.</span>
+                            </div>
+                            <div class="allert-zone__buttons">
+                                <button class="allert-btn allert-btn__white  allert-btn__up">Open</button>
+                                <button class="allert-btn allert-btn__white allert-btn__down">Dismiss</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="allert-zones ">
+                        <div class="allert-zones__box allert-zones__modal">
+                            <div class="allert-zone">
+                                <button class="modal__btn">Press me</button>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal__body">
+                                <div class="modal__content">
+                                    <div class="modal__text">
+                                        <h4 class="modal__title">Modal Title</h4>
+                                        <span class="modal__text">Alert details go here.</span>
+                                        <button class="modal__close"></button>
+                                    </div>
+                                    <div class="modal__buttons">
+                                        <button class="modal__cancel">Cancel</button>
+                                        <button class="modal__sumbit">Submit</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
             </section>
         </div>
     </main>
