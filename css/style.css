@@ -950,6 +950,10 @@ textarea {
   display: flex;
   justify-content: space-around;
 }
+.donwoload__zone {
+  display: flex;
+  justify-content: space-around;
+}
 .donwoload__box {
   width: 273px;
   height: 281px;
@@ -959,6 +963,27 @@ textarea {
   border: 1px dashed #474a51;
   box-shadow: 0px 5px 5px #474a51;
   text-align: center;
+  margin-top: 20px;
+}
+.upload_zone {
+  width: 98px;
+  height: 36px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 7px 12px;
+  display: flex;
+  align-items: center;
+}
+.upload_zone__text {
+  padding-right: 9px;
+  font-weight: 500;
+  font-size: 13px;
+}
+.loadind_box {
+  width: 273px;
+  height: 281px;
+  background-color: #fff;
   margin-top: 20px;
 }
 .donwoload__box:hover {
@@ -1031,6 +1056,86 @@ textarea {
 }
 .donwoload__label_success {
   display: none;
+}
+.loading__title {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  align-items: center;
+}
+.loading__text {
+  font-weight: 600;
+  font-size: 16px;
+  color: #2c2c2c;
+}
+.recent-uploads {
+  margin: 0 20px;
+  width: 233px;
+  margin-bottom: 25px;
+}
+.recent-uploads__box {
+  display: flex;
+  align-items: center;
+}
+.recent-uploads__logo {
+  margin-right: 10px;
+}
+.recent-uploads__title {
+  margin-right: 94px;
+}
+.recent-uploads__text {
+  font-weight: 500;
+  font-size: 11px;
+  color: #2c2c2c;
+  opacity: 0.6;
+}
+
+.recent-uploads__btn {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: relative;
+  background: #e0e0e0;
+}
+.recent-uploads__btn-repeat-red {
+  background: red;
+}
+.recent-uploads__btn-eye__icon {
+  position: absolute;
+  top: 5px;
+  left: 3px;
+}
+.recent-uploads__btn-repeat__icon {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+.recent-uploads__btn:hover {
+  background: red;
+  transition: all 1s ease;
+}
+.recent-uploads__btn-close::before {
+  content: "+";
+  position: absolute;
+  top: 1px;
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  color: #ffffff;
+}
+.recent-uploads__btn-text {
+  position: absolute;
+  top: 1px;
+  left: -56px;
+  font-weight: 500;
+  font-size: 11px;
+  color: #2c2c2c;
+  opacity: 0.4;
+}
+.recent-uploads__btn-text__red {
+  color: #ff3e1d;
+  left: -38px;
+  opacity: 1;
 }
 
 .progress {
