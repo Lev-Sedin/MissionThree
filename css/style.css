@@ -1200,12 +1200,15 @@ textarea {
 .paginations {
   display: grid;
   justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
+  grid-template-columns: repeat(auto-fit, 350px);
 }
 .pagination {
   background: #fff;
   align-items: center;
   max-width: 189px;
+  
 }
 .pagination-big {
   min-width: 320px;
@@ -1262,6 +1265,7 @@ textarea {
 .pagination__btn {
   width: 36px;
   height: 36px;
+  background-color: white;
 }
 .pagination__text {
   font-weight: 500;
@@ -1520,11 +1524,11 @@ textarea {
   display: grid;
   grid-template-columns: repeat(auto-fit, 320px);
   justify-content: space-around;
-  border-radius: 5px;
   min-height: 42px;
   color: #ffffff;
   margin: 20px 0;
   font-size: 13px;
+  border-radius: 5px;
 }
 .allert-zones__box {
   background: #18a0fb;
