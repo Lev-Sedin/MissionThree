@@ -104,6 +104,7 @@ body {
   font-size: 20px;
   border-bottom: 1px solid #2c2c2c;
   padding-bottom: 20px;
+  margin-top: 30px;
 }
 .h4-title {
   font-size: 13px;
@@ -1168,6 +1169,14 @@ textarea {
   border-radius: 10px;
   transition: all 2s ease;
 }
+#circle-container {
+  width: 120px;
+  height: 120px;
+  margin: 34px auto 17px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
 .small-progress{
   opacity: 1;
   height: 2px;

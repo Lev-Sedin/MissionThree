@@ -23,17 +23,15 @@
     <script defer src="js/pagination.js"></script>
     <script defer src="js/stepbar.js"></script>
     <script defer src="js/modal.js"></script>
-    
-
-    <title>MissionThree</title>
-    
+    <script defer src="js/progressBar/progressBar.js"></script>
+    <script defer src="js/progressCircle.js"></script>
+    <title>MissionThree</title>    
 </head>
 <body>
     <main>
         <div class="container">
-            <section class="forms">
-                <h2 class="h2-title">Form</h2>
-                <div class="forms-section">
+            <h2 class="h2-title">Form</h2>
+            <div class="forms-section">
                     <div class="forms-inputs">
                         <div class="form-section__item">
                             <h4 class="h4-title form-section__name">Input Disabled</h4>
@@ -82,9 +80,8 @@
                             <textarea name="text" id="textarea" placeholder="Value" class="forms-section__input error-input"></textarea>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <div class="select">
+            </div>
+            <div class="select">
                         <div class="calendar__box">
                             <div id="calendar"></div>
                         </div>
@@ -104,9 +101,8 @@
                                 <option value="Choose-Two">Choose-Two</option>
                             </select>
                         </div>
-                    </div>
-                </div>
-                <div class="forms-section">
+            </div>
+            <div class="forms-section">
                     <div class="forms-checkbox">
                         <div class="checkbox">
                             <h4 class="h4-title form-switch__name">Option</h4>
@@ -173,10 +169,10 @@
                                 <span class="forms-switch__span-disabled minis_disabled"></span>
                             </label>
                         </div>
-                    </div>
-                </div>
-                <h2 class="h2-title">Buttons</h2>
-                <div class="section-button">
+                   </div>
+            </div>
+            <h2 class="h2-title">Buttons</h2>
+            <div class="section-button">
                     <div class="button ">
                         <div class="buttons">
                             <button class="btn button__blue">Download</button>
@@ -227,8 +223,8 @@
                             <button class="buttons__size third">L</button>
                         </div>
                     </div>
-                </div>
-                <div class="section-tag">
+            </div>
+            <div class="section-tag">
                     <div class="button-tag">
                         <div class="button__box button__box_white">
                             <span class="button__name button__name_white ">Tag</span>
@@ -267,18 +263,16 @@
                             <button type="btn" class="button__tag button__tag_orange"></button>
                         </div>
                     </div>
-                </div>
-                <div class="section-slider">
+            </div>
+            <div class="section-slider">
                     <div class="sliders">
                         <div class="slider" id="slider__one"></div>
                         <div class="slider" id="slider__two"></div>
                         <div class="slider" id="slider__three"></div>
                         <div class="slider" id="slider__four"></div>
                     </div>
-                    </div>
-                </div>
-                <div class="container-second">
-                    <div class="tabs">
+            </div>
+            <div class="tabs">
                         <h2 class="h2-title">Tabs</h2>
                         <div class="tab">
                             <ul class="tab__buttons">
@@ -448,9 +442,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <h2 class="h2-title">Upload</h2>
-                <div class="upload">
+            </div>
+            <h2 class="h2-title">Upload</h2>
+            <div class="upload">
                     <div class="donwoload__box">
                         <input type="file" class="button__file" hidden="hidden">
                         <button class="donwoload__btn">
@@ -458,41 +452,38 @@
                                 <h3 class="h3-title donwoload__title">Add Files</h3>
                                     <label for="" class="donwoload__label">Drag & Drop to upload or</label>
                                     <span class="donwoload__text"></span>
-                            </button>
-                        </div>
-                        <div class="donwoload__box error">
-                            <input type="file" class="button__file" id="button-error" hidden="hidden">
-                            <button class="donwoload__btn" id="donwoload-error">
-                                <img class="donwoload__icon" src="img/svg/upload/uploadred.svg" alt="">
-                                <h3 class="h3-title donwoload__title donwoload__title_error">Something went wrong.</h3>
-                                    <label for="" class="donwoload__label">Please try again</label>
-                                    <span class="donwoload__text" id="donwoload-text-error"></span>
-                            </button>
-                        </div>
-                        <div class="donwoload__box success">
-                            <input type="file" class="button__file" id="button-success" hidden="hidden">
-                            <button class="donwoload__btn" id="donwoload-success">
-                                <img class="donwoload__icon_success" src="img/svg/upload/uploadsuccess.svg" alt="">
-                                <h3 class="h3-title donwoload__title donwoload__title_success">Upload Complete!</h4>
-                                    <label for="" class="donwoload__label donwoload__label_success"></label>
-                                    <span class="donwoload__text donwoload__text_success" id="donwoload-text-success">Upload New</span>
-                            </button>
-                        </div>
+                        </button>
                     </div>
-                </div>
-                <div class="donwoload__zone">
+                    <div class="donwoload__box error">
+                        <input type="file" class="button__file" id="button-error" hidden="hidden">
+                        <button class="donwoload__btn" id="donwoload-error">
+                            <img class="donwoload__icon" src="img/svg/upload/uploadred.svg" alt="">
+                            <h3 class="h3-title donwoload__title donwoload__title_error">Something went wrong.</h3>
+                                <label for="" class="donwoload__label">Please try again</label>
+                                <span class="donwoload__text" id="donwoload-text-error"></span>
+                        </button>
+                    </div>
+                    <div class="donwoload__box success">
+                        <input type="file" class="button__file" id="button-success" hidden="hidden">
+                        <button class="donwoload__btn" id="donwoload-success">
+                            <img class="donwoload__icon_success" src="img/svg/upload/uploadsuccess.svg" alt="">
+                            <h3 class="h3-title donwoload__title donwoload__title_success">Upload Complete!</h4>
+                                <label for="" class="donwoload__label donwoload__label_success"></label>
+                                <span class="donwoload__text donwoload__text_success" id="donwoload-text-success">Upload New</span>
+                        </button>
+                    </div>
+            </div>
+            <div class="donwoload__zone">
                     <div class="donwoload__box">
                         <h3 class="h3-title progress-text">uploaded</h3>
                         <div class="progress">
-                            <div class="progress-done" data-done="68"></div>
+                            <div class="progress-done" data-done="69"></div>
                         </div>
                         <label for="" class="donwoload__label">Please wait...</label>
                         <button class="donwoload__button">Cancel</button>
                     </div>
                     <div class="donwoload__box">
-                        <svg class="progress-circle" width="107" height="107" >
-                            <circle class="progress-circle__line" cx="53.5" cy="53.5" r="50" fill="transparent" stroke="#E0E0E0" stroke-width="5"/>
-                        </svg>
+                        <div class="circle" id="circle-container" data-done="69"></div>
                         <label for="" class="donwoload__label">Uploading ...</label>
                         <button class="donwoload__button">Cancel</button>
                     </div>
@@ -563,10 +554,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                </div>
-                <h2 class="h2-title">Alerts</h2>
-                <div class="allerts">
+            </div>
+            <h2 class="h2-title">Alerts</h2>
+            <div class="allerts">
                     <div class="allert-zones" >
                         <div class="allert-zones__box">
                             <div class="allert-zone">
@@ -640,12 +630,9 @@
                                         <button class="modal__sumbit">Submit</button>
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
         </div>
     </main>
 </body>

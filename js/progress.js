@@ -1,13 +1,18 @@
 const progFunc = () =>{
   const progress = document.querySelector(".progress-done");
   const percentage = document.querySelector(".progress-text");
+  let value = progress.getAttribute("data-done");
   width = 0
-  setTimeout(() =>{
-    progress.style.opacity = 1;
-    percentage.innerHTML = width++
-    percentage.innerHTML = progress.getAttribute("data-done")  + "% uploaded";
-    progress.style.width = progress.getAttribute("data-done") + "%";
-    
-  },1500,)
+
+  setInterval(()=>{
+    if(width == value){
+        clearInterval();
+    }else{
+        progress.style.opacity = 1;
+        width +=1;
+        percentage.innerHTML = width + "% uploaded";
+        progress.style.width = progress.getAttribute("data-done") + "%";
+    }
+},30)
 }
 progFunc()
