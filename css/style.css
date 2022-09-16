@@ -1725,3 +1725,60 @@ textarea {
 .modal__sumbit:hover {
   opacity: 0.5;
 }
+
+.tables{
+  max-width: 804px;
+  height: 100%;
+  margin-top: 20px;
+}
+.table{
+  width: 100%;
+  font-size: 13px;
+  color: #2C2C2C;
+  border-collapse: collapse;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  background: #FFFFFF;
+  text-align: left;
+  vertical-align: middle;
+}
+.caption{
+  background: #F7F7F7;
+  box-shadow: inset 0px -1px 0px #E0E0E0;
+  padding: 12px ;
+}
+.data ,th{
+  height: 48px;
+  width: 50%;
+}
+th{
+  font-weight: 600;
+  padding: 12px;
+  
+}
+.name{
+  font-weight: 400;
+}
+.date{
+  opacity: 0.5;
+  position: relative;
+}
+.name, .date{
+  padding: 12px;
+  border-bottom: 1px solid #E0E0E0;
+  cursor: pointer;
+}
+.data:hover{
+  background: rgba(255, 212, 34, 0.1);
+  box-shadow: inset 0px -1px 0px #E0E0E0;
+  opacity: 1;
+}
+.data-icon{
+  vertical-align: middle;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+.data-icon:hover{
+  background-image: url(../img/svg/Table/Icon/MorebutB.svg);
+}
