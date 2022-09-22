@@ -1222,6 +1222,7 @@ textarea {
 .pagination-big {
   min-width: 320px;
   background: #fff;
+  padding: 5px 7px;
 }
 .pagination__model {
   display: flex;
@@ -1443,7 +1444,7 @@ textarea {
 .steps__mini {
   min-width: 240px;
 }
-.step {
+.step, .step-second{
   position: relative;
   width: 18px;
   height: 18px;
@@ -1459,6 +1460,7 @@ textarea {
   width: 10px;
   height: 10px;
   color: rgba(44, 44, 44, 0.5);
+  cursor: pointer;
 }
 
 .step__text {
@@ -1469,6 +1471,7 @@ textarea {
   left: -13px;
   font-size: 13px;
   font-weight: 500;
+  pointer-events: none;
 }
 .step__text:hover {
   cursor: pointer;

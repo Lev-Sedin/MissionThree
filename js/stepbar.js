@@ -30,7 +30,7 @@ Array.prototype.forEach.call(els, (e) => {
 stepHorizontal()
 
 const stepVertical = (() =>{
-let els = document.getElementsByClassName('step');
+let els = document.getElementsByClassName('step-second');
 let steps = [];
 Array.prototype.forEach.call(els, (e) => {
   steps.push(e);
@@ -96,6 +96,7 @@ function progress(stepNum) {
       if (e.id === stepNum) {
         e.classList.add('step-bar__selected__mini');
         e.classList.remove('step-bar__completed__mini');
+
         changeActiveTabs()
       }
       if (e.id < stepNum) {

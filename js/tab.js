@@ -34,7 +34,7 @@ const breadcrumbs = (() =>{
               breadcrumbs.classList.add("breadcrumbs__active")
             }
             if(index > indexBreadcrumb){
-              breadcrumbs.classList.remove("breadcrumbs__active")
+              breadcrumbs.classList.remove("breadcrumbs__active") 
             }
        })
         
