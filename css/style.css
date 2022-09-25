@@ -802,11 +802,11 @@ textarea {
 .breadcrumbs__list {
   display: flex;
 }
-.breadcrumbs__link {
+.breadcrumbs__link,.breadcrumbs__link_blue {
   list-style: none;
   margin: 10px 12px;
 }
-.breadcrumbs__link:hover {
+.breadcrumbs__link:hover,.breadcrumbs__link_blue:hover{
   opacity: 1;
 }
 .breadcrumbs__next {
@@ -816,7 +816,7 @@ textarea {
   opacity: 1;
 }
 
-.breadcrumbs__link::after {
+.breadcrumbs__link::after, .breadcrumbs__link_blue::after {
   content: "";
   display: inline-flex;
   width: 8px;
@@ -830,10 +830,10 @@ textarea {
   border-bottom: 2px solid rgba(44, 44, 44, 0.5);
   border-right: 2px solid rgba(44, 44, 44, 0.5);
 }
-.breadcrumbs__link:last-child::after {
+.breadcrumbs__link:last-child::after ,.breadcrumbs__link_blue:last-child::after{
   display: none;
 }
-.breadcrumbs__item {
+.breadcrumbs__item, .breadcrumbs__item__blue {
   text-decoration: none;
   color: #2c2c2c;
 }
