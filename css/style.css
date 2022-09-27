@@ -365,7 +365,7 @@ textarea {
   justify-content: space-between;
 }
 .buttons {
-  margin: 10px 0px;
+  margin: 10px 5px;
 }
 .btn {
   width: 144px;
@@ -740,19 +740,19 @@ textarea {
 }
 .tab {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 400px);
+  grid-template-columns: repeat(auto-fit, 364px);
   justify-content: space-around;
 }
 .tab__buttons {
   display: flex;
   font-weight: 500;
   align-items: center;
-  vertical-align: center;
+  justify-content: center;
 }
 .tab__change {
   border: 1px solid transparent;
   background-color: transparent;
-  padding: 11px 38px;
+  padding: 11px 10px;
 }
 .tab__change:focus {
   color: #18a0fb;
@@ -765,7 +765,7 @@ textarea {
   background-image: url(../img/svg/searchblack.svg);
   background-position: 7% 50%;
   background-repeat: no-repeat;
-  padding-right: 40px;
+  padding-left: 30px;
 }
 .tab__icon_1:focus {
   background-image: url(../img/svg/Searchblue.svg);
@@ -774,7 +774,7 @@ textarea {
   background-image: url(../img/svg/Archiveblack.svg);
   background-position: 7% 50%;
   background-repeat: no-repeat;
-  padding-right: 40px;
+  padding-left: 30px;
 }
 .tab__icon_2:focus {
   background-image: url(../img/svg/Archiveblue.svg);
@@ -784,7 +784,7 @@ textarea {
   background-image: url(../img/svg/downloadblack.svg);
   background-position: 7% 50%;
   background-repeat: no-repeat;
-  padding-right: 40px;
+  padding-left: 30px;
 }
 
 .tab__icon_3:focus {
@@ -1549,7 +1549,6 @@ textarea {
   justify-content: space-around;
   min-height: 42px;
   color: #ffffff;
-  margin: 20px 0;
   font-size: 13px;
   border-radius: 5px;
 }
@@ -1559,6 +1558,7 @@ textarea {
   padding: 9px 13px;
   border-radius: 5px;
   box-shadow: 0px 10px 23px rgb(0 0 0 / 12%);
+  margin: 10px 5px;
 }
 .allert-zones__box-red {
   background: rgba(255, 62, 29, 1);
@@ -1780,9 +1780,8 @@ th{
   opacity: 0.5;
   position: relative;
 }
-.name, .date, .location{
+.name, .date, .location, .data-icon{
   padding: 12px;
-  border-bottom: 1px solid #E0E0E0;
   cursor: pointer;
 }
 .data:hover{
@@ -1791,11 +1790,12 @@ th{
   opacity: 1;
 }
 .data-icon{
-  vertical-align: middle;
-  position: absolute;
-  right: 12px;
-  top: 12px;
+  display: block;
 }
+td{
+  border-bottom: 1px solid #E0E0E0;
+}
+
 .data-icon:hover{
   background-image: url(../img/svg/Table/Icon/MorebutB.svg);
 }
@@ -1810,9 +1810,6 @@ th{
   width: 100%;
   padding: 10px 12px 10px 35px;
 
-}
-.button__search_table{
-  left: 5px;
 }
 
 @media screen and (max-width: 1220px){
@@ -1852,16 +1849,29 @@ th{
     margin: 0 auto;
     margin-bottom: 20px;
   }
+  .btn{
+    margin-bottom: 5px;
+  }
 }
 @media screen and (max-width: 425px){
 
 
 }
 @media screen and (max-width: 375px){
-
-
+.pagination-big{
+  min-width: 310px;
+}
+.breadcrumbs{
+  grid-template-columns: repeat(auto-fit, 315px);
+  font-size: 10px;
+}
+.tab{
+  grid-template-columns: repeat(auto-fit, 347px);
+}
+.tab__change{
+  font-size: 10px;
+}
 }
 @media screen and (max-width: 320px){
-
 
 }
