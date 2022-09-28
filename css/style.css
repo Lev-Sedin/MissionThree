@@ -113,6 +113,7 @@ body {
   margin: 30px 7px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .form-section__item {
   padding-top: 20px;
@@ -1744,6 +1745,7 @@ textarea {
   max-width: 804px;
   height: 100%;
   margin: 20px;
+  padding-bottom: 10px;
 }
 .table{
   width: 100%;
@@ -1761,7 +1763,7 @@ textarea {
   box-shadow: inset 0px -1px 0px #E0E0E0;
   padding: 12px ;
 }
-.data ,th{
+.data ,.caption-small{
   height: 48px;
   width: 50%;
 }
@@ -1792,6 +1794,9 @@ th{
 .data-icon{
   display: block;
 }
+.data-icon__big{
+  width: 48px;
+}
 td{
   border-bottom: 1px solid #E0E0E0;
 }
@@ -1810,6 +1815,13 @@ td{
   width: 100%;
   padding: 10px 12px 10px 35px;
 
+}
+.check{
+  padding: 16px 0px 16px 17px;
+  max-width: 45px;
+}
+.check > .forms-checkbox__label{
+  margin: 0;
 }
 
 @media screen and (max-width: 1220px){
@@ -1855,12 +1867,19 @@ td{
 }
 @media screen and (max-width: 425px){
 
+  .table-big{
+    font-size: 10px;
+  }
 
+  .name, .date, .location, .data-icon {
+    padding: 10px;
+}
 }
 @media screen and (max-width: 375px){
 .pagination-big{
   min-width: 310px;
 }
+.c
 .breadcrumbs{
   grid-template-columns: repeat(auto-fit, 315px);
   font-size: 10px;
