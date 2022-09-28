@@ -1866,7 +1866,11 @@ td{
   }
 }
 @media screen and (max-width: 425px){
-
+  .breadcrumbs{
+    font-size: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 315px);
+  }
   .table-big{
     font-size: 10px;
   }
@@ -1890,7 +1894,4 @@ td{
 .tab__change{
   font-size: 10px;
 }
-}
-@media screen and (max-width: 320px){
-
 }
